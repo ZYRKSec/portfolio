@@ -1,0 +1,5 @@
+# Loose source files at root (not needed for the live site — copies live in assets/)
+/*.jpg
+/*.jpeg
+/*.png
+/*.docx

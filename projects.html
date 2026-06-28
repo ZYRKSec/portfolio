@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Syed Mustafa Ali</title>
+  <meta name="description" content="Selected projects by Syed Mustafa Ali — AI apps, full-stack platforms, machine learning, trading automation and security tooling." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>" />
+</head>
+<body>
+
+  <div class="preloader"><div class="loader"></div></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="logo">Syed <span>Mustafa</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <header class="page-header">
+    <span class="blob-bg"></span>
+    <div class="container reveal">
+      <span class="eyebrow">My work</span>
+      <h1>Projects I'm <span class="gradient-text">proud of</span></h1>
+      <p>Products and projects I've designed, built and shipped — spanning AI, machine learning, mobile, web, trading automation and security.</p>
+    </div>
+  </header>
+
+  <!-- ============ PROJECTS ============ -->
+  <section style="padding-top:24px;">
+    <div class="container">
+      <div class="filter-row reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="app">Mobile</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="automation">Automation</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- MediaTree AI -->
+        <article class="project-card reveal" data-cat="app ai">
+          <div class="project-thumb">MediaTree AI</div>
+          <div class="project-body">
+            <h3>MediaTree AI <span style="font-weight:500;color:var(--text-soft);font-size:0.85rem;">(SocialFlux AI)</span></h3>
+            <p>A production Flutter app for AI-powered social media content generation — integrating <b>40+ AI models</b> across providers, with multi-platform campaigns, voice-to-post, a "Brand DNA" personalization system, an agency mode for managing clients, and Razorpay credit-based monetization.</p>
+            <div class="tag-row"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">Razorpay</span><span class="tag">Multi-AI</span></div>
+            <div class="project-links">
+              <a href="https://mediatree.ai" target="_blank" rel="noopener">Live Site ↗</a>
+              <a href="https://github.com/SyedMustafaAli31" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- IdeaRank AI -->
+        <article class="project-card reveal" data-cat="web ai">
+          <div class="project-thumb">IdeaRank AI</div>
+          <div class="project-body">
+            <h3>IdeaRank AI</h3>
+            <p>An AI-powered startup idea validator built with Next.js &amp; React on a Firebase backend. Integrates <b>dual Claude + Gemini</b> providers with live web search via Serper for grounded, real-time validation — plus a Razorpay-powered Pro tier with full payment and credit handling.</p>
+            <div class="tag-row"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">Claude + Gemini</span><span class="tag">Razorpay</span></div>
+            <div class="project-links">
+              <a href="https://idearankai.software" target="_blank" rel="noopener">Live Site ↗</a>
+              <a href="https://github.com/SyedMustafaAli31" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- F&O Options Trading Bot -->
+        <article class="project-card reveal" data-cat="automation">
+          <div class="project-thumb">Trading Bot</div>
+          <div class="project-body">
+            <h3>F&amp;O Options Trading Bot</h3>
+            <p>An automated NIFTY/BANKNIFTY options engine using hedged strategies (Iron Condor, Bull Put / Bear Call spreads). Features a full <b>Black-Scholes Greeks engine</b>, IV-Rank entry signals, real-time Zerodha Kite data over WebSocket, Telegram bot control and one-click Railway deployment with built-in risk controls.</p>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">Zerodha Kite</span><span class="tag">SQLite</span><span class="tag">Telegram</span></div>
+            <div class="project-links">
+              <span style="font-size:0.85rem;font-weight:600;color:var(--text-soft);display:inline-flex;align-items:center;gap:6px;">🔒 Private project</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ZYRK-Recon -->
+        <article class="project-card reveal" data-cat="ai automation">
+          <div class="project-thumb">ZYRK-Recon</div>
+          <div class="project-body">
+            <h3>ZYRK-Recon</h3>
+            <p>A zero-cost, one-command recon pipeline that turns any IP into a live attack-map in <b>under 6 minutes</b>. Couples a <b>Gemma-3n LLM</b> for AI wordlist generation with SYN-stealth + version scanning, Cloudflare-aware content discovery and tech fingerprinting — surfacing only actionable findings with near-zero false positives.</p>
+            <div class="tag-row"><span class="tag">Shell</span><span class="tag">Gemma-3n</span><span class="tag">Nmap</span><span class="tag">Recon</span></div>
+            <div class="project-links">
+              <a href="https://github.com/ZYRKSec/ZYRK-Recon" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ZYRKSec Recon API -->
+        <article class="project-card reveal" data-cat="ai automation">
+          <div class="project-thumb">Recon API</div>
+          <div class="project-body">
+            <h3>ZYRKSec Recon API</h3>
+            <p>The ZYRK-Recon engine shipped as a <b>live REST API on RapidAPI</b>. Turn any domain or IP into an actionable attack-surface map — port &amp; version scanning, Cloudflare-aware content discovery, tech fingerprinting and AI-driven wordlists — through one simple endpoint any app can call.</p>
+            <div class="tag-row"><span class="tag">REST API</span><span class="tag">RapidAPI</span><span class="tag">Gemma-3n</span><span class="tag">Security</span></div>
+            <div class="project-links">
+              <a href="https://rapidapi.com/syedmustafaa024/api/zyrksec-recon-api" target="_blank" rel="noopener">Live API ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cardiac Arrest Prediction -->
+        <article class="project-card reveal" data-cat="ai">
+          <div class="project-thumb">Cardiac ML</div>
+          <div class="project-body">
+            <h3>Cardiac Arrest Prediction</h3>
+            <p>A machine-learning model that predicts cardiac-arrest risk from patient health metrics. Built in a Python / Jupyter workflow with data preprocessing, feature engineering, model training and evaluation.</p>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Pandas</span><span class="tag">ML</span></div>
+            <div class="project-links">
+              <a href="https://github.com/SyedMustafaAli31/Cardiac-Arrest-Prediction-using-Machine-Learning" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Phishing Detection -->
+        <article class="project-card reveal" data-cat="ai">
+          <div class="project-thumb">Phishing ML</div>
+          <div class="project-body">
+            <h3>Phishing Detection</h3>
+            <p>An ML classifier that detects phishing websites and URLs by analysing their features — trained and evaluated in a Python / Jupyter notebook, blending data science with a security mindset.</p>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Security</span><span class="tag">ML</span></div>
+            <div class="project-links">
+              <a href="https://github.com/SyedMustafaAli31/Phishing_Detection" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Email Spam Detection -->
+        <article class="project-card reveal" data-cat="ai">
+          <div class="project-thumb">Spam ML</div>
+          <div class="project-body">
+            <h3>Email Spam Detection</h3>
+            <p>A spam-vs-ham email classifier using NLP feature extraction and machine learning, built and evaluated in Python / Jupyter to accurately filter unwanted mail.</p>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">NLP</span><span class="tag">scikit-learn</span><span class="tag">ML</span></div>
+            <div class="project-links">
+              <a href="https://github.com/SyedMustafaAli31/Email-Spam" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Legal Document Analyzer -->
+        <article class="project-card reveal" data-cat="ai web">
+          <div class="project-thumb">Legal AI</div>
+          <div class="project-body">
+            <h3>Legal Document Analyzer</h3>
+            <p>A Python tool that analyses legal documents — extracting and summarising key clauses and information with NLP / LLM techniques to make dense legal text far easier to understand.</p>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">NLP</span><span class="tag">LLM</span><span class="tag">Document AI</span></div>
+            <div class="project-links">
+              <a href="https://github.com/SyedMustafaAli31/Legal-Document-Analyzer" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Like what you see?</h2>
+        <p>I'm always building something new. Reach out and let's talk about your idea or product.</p>
+        <a href="contact.html" class="btn btn-ghost">Start a conversation →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container footer-grid">
+      <p>© <span class="year"></span> Syed Mustafa Ali · Built with ♥ in Hyderabad.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/SyedMustafaAli31" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg></a>
+        <a href="https://github.com/ZYRKSec" target="_blank" rel="noopener" aria-label="GitHub (Security)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></a>
+        <a href="https://x.com/Syed_Mustafa_31" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.2 2H21l-6.6 7.5L22 22h-6.3l-4.9-6.4L5.1 22H2.3l7-8L2 2h6.5l4.4 5.8L18.2 2zm-1.1 18h1.7L7 3.8H5.2L17.1 20z"/></svg></a>
+        <a href="mailto:syedmustafaa024@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
