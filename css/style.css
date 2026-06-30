@@ -290,8 +290,14 @@ section { padding: 110px 0; position: relative; }
   background-size: 200% 200%;
   display: grid; place-items: center;
   position: relative;
+  perspective: 800px;
   box-shadow: var(--shadow-lg), var(--glow);
-  animation: float 6s ease-in-out infinite, hue 10s linear infinite;
+  animation: float 6s ease-in-out infinite, hue 10s linear infinite, glowPulse 4.5s ease-in-out infinite;
+}
+/* Faint headphone-glow pulse */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: var(--shadow-lg), 0 0 38px rgba(124, 92, 255, 0.25); }
+  50%      { box-shadow: var(--shadow-lg), 0 0 78px rgba(124, 92, 255, 0.55); }
 }
 .avatar-ring::before {
   content: ''; position: absolute; inset: -20px;
