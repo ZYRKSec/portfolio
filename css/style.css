@@ -605,8 +605,19 @@ footer { border-top: 1px solid var(--border); padding: 44px 0; background: var(-
 /* =========================================================
    Scroll reveal
    ========================================================= */
-.reveal { opacity: 0; transform: translateY(38px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
+.reveal { opacity: 0; transform: translateY(42px); transition: opacity 0.7s var(--ease), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1); will-change: transform, opacity; }
 .reveal.visible { opacity: 1; transform: none; }
+
+/* Staggered entrance for grid/step children (springy cascade) */
+.skills-grid .skill-card:nth-child(2), .projects-grid .project-card:nth-child(2), .steps .step-card:nth-child(2) { transition-delay: 0.07s; }
+.skills-grid .skill-card:nth-child(3), .projects-grid .project-card:nth-child(3), .steps .step-card:nth-child(3) { transition-delay: 0.14s; }
+.skills-grid .skill-card:nth-child(4), .projects-grid .project-card:nth-child(4), .steps .step-card:nth-child(4) { transition-delay: 0.21s; }
+.skills-grid .skill-card:nth-child(5), .projects-grid .project-card:nth-child(5) { transition-delay: 0.28s; }
+.skills-grid .skill-card:nth-child(6), .projects-grid .project-card:nth-child(6) { transition-delay: 0.35s; }
+.skills-grid .skill-card:nth-child(7), .projects-grid .project-card:nth-child(7) { transition-delay: 0.42s; }
+.skills-grid .skill-card:nth-child(8), .projects-grid .project-card:nth-child(8) { transition-delay: 0.49s; }
+.projects-grid .project-card:nth-child(9) { transition-delay: 0.56s; }
+@media (prefers-reduced-motion: reduce) { .reveal { transition-delay: 0s !important; } }
 
 /* Page header */
 .page-header { padding: calc(var(--nav-h) + 80px) 0 50px; text-align: center; position: relative; }
