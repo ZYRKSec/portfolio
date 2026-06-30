@@ -3,3 +3,9 @@
 /*.jpeg
 /*.png
 /*.docx
+
+# Tooling / dependencies (not part of the site)
+.claude/
+node_modules/
+package.json
+package-lock.json
