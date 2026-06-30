@@ -81,6 +81,8 @@ try {
     }, { passive: true });
 
     const tick = () => {
+      // If the Three.js 3D avatar is active, let it own the head — stop tilting the container.
+      if (window.__avatar3D) { inner.style.transform = ""; requestAnimationFrame(tick); return; }
       const now = performance.now();
       const t = now / 1000;
       const idle = now - lastMove > 2500;

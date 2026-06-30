@@ -316,6 +316,7 @@ section { padding: 110px 0; position: relative; }
   width: 90%; height: 90%;
   border-radius: 50%;
   background: var(--bg-soft);
+  position: relative;
   display: grid; place-items: center;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 3.6rem; font-weight: 700;
